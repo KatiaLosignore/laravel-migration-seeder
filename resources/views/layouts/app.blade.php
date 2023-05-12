@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>@yield('page-title')</title>
-    @vite('resources/js/app.js')
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>@yield('page-title')</title>
+        @vite('resources/js/app.js')
+    </head>
+    <body class="bg-primary">
 
-    @include('partials.header')
+        @include('partials.header')
 
-    <div class='container'>
-        @yield('content')
-    </div>
+        <div class='container'>
+            @yield('content')
+        </div>
 
-    @include('partials.footer')
+        @include('partials.footer')
 
-</body>
+    </body>
 </html>
